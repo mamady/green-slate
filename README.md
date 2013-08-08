@@ -16,13 +16,18 @@ contributors" kool-aid.
 
         $ sudo apt-get install ruby1.9
 
-(P.S: If you want to be cool you can use RVM. If you want to be super-cool
-you can use rbenv)
+   (P.S: If you want to be cool you can use RVM. If you want to be super-cool you can use rbenv)
 
 2. Run the script
 
         $ ruby greenify.rb
 
+   You will see progress as a number of dots. Wait until the script finishes running.
+   
+3. Push up to github
+
+        $ git push
+        
 
 ## Contributing
 
