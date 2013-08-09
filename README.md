@@ -28,11 +28,25 @@ contributors" kool-aid.
 
         $ git push
         
+        
+## Getting Started - (Windows)
+
+1. Install Ruby (if you dont have it already)
+        You can grab it from [http://rubyinstaller.org/downloads/](http://rubyinstaller.org/downloads/)
+
+2. Run the script
+
+        $ ruby greenify_windows.rb
+
+   You will see progress as a number of dots. Wait until the script finishes running.
+   
+3. Push up to github
+
+        $ git push
 
 ## Contributing
 
-I encourage you to contribute to Green Slate. Feel free to send me pull
-requests.
+I encourage you to contribute to Green Slate. Feel free to send me pull requests.
 
 
 ## License
