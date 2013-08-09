@@ -10,7 +10,7 @@ while END_DATE - date >= 0
 
   COMMITS_PER_DAY.times do
     # make a change to file.rb
-    open('file.rb', 'a') do |f|
+    open('./file.rb', 'a') do |f|
       f.puts 'Green slate'
     end
 
