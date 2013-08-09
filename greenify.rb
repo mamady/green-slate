@@ -18,13 +18,13 @@ while END_DATE - date >= 0
     `git add .`
 
     # commit the file
-    `git commit -m"Minor changes."`
+    `git commit -m"Slight alteration."`
 
     # amend the commit date
     formatted_date = date.strftime("Thu %b %e %H:%M:%S GMT %Y");
-    cmd = %(GIT_COMMITTER_DATE="#{formatted_date}" git commit --amend --date "#{formatted_date}" -m"Minor changes.")
-    print '.'
-    %{cmd}
+    cmd = %(GIT_COMMITTER_DATE="#{formatted_date}" git commit --amend --date "#{formatted_date}" -m"Slight alteration.")
+    print '.' # progress bar
+    `#{cmd}`
   end
 
   date += DAY_IN_SECONDS
