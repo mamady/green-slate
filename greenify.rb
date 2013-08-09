@@ -22,9 +22,9 @@ while END_DATE - date >= 0
 
     # amend the commit date
     formatted_date = date.strftime("Thu %b %e %H:%M:%S GMT %Y");
-    ENV.cmd = %(GIT_COMMITTER_DATE="#{formatted_date}" git commit --amend --date "#{formatted_date}" -m"Minor changes.")
+    cmd = %(ENV GIT_COMMITTER_DATE="#{formatted_date}" git commit --amend --date "#{formatted_date}" -m"Minor changes.")
     print '.'
-    `#{ENV.cmd}`
+    `#{cmd}`
   end
 
   date += DAY_IN_SECONDS
