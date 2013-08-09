@@ -18,7 +18,7 @@ while END_DATE - date >= 0
     `git add .`
 
     # commit the file
-    `git commit -m"Slight alteration."`
+    `git commit -m"Minor changes."`
 
     # amend the commit date
     formatted_date = date.strftime("Thu %b %e %H:%M:%S GMT %Y");
