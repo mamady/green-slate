@@ -22,7 +22,7 @@ while END_DATE - date >= 0
 
     # amend the commit date
     formatted_date = date.strftime("Thu %b %e %H:%M:%S GMT %Y");
-    %(GIT_COMMITTER_DATE="#{formatted_date}" git commit --amend --date "#{formatted_date}" -m"Minor changes.")
+    %x(GIT_COMMITTER_DATE="#{formatted_date}" git commit --amend --date "#{formatted_date}" -m"Minor changes.")
     print '.'
     #system(cmd);
     #`#{cmd}`
