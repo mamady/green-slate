@@ -10,7 +10,7 @@ while END_DATE - date >= 0
 
   COMMITS_PER_DAY.times do
     # make a change to file.rb
-    open('./file.rb', 'a') do |f|
+    File.open('file.rb', 'a') do |f|
       f.puts 'Green slate'
     end
 
@@ -18,11 +18,11 @@ while END_DATE - date >= 0
     `git add .`
 
     # commit the file
-    `git commit -m"Slight alteration."`
+    `git commit -m"Minor changes."`
 
     # amend the commit date
     formatted_date = date.strftime("Thu %b %e %H:%M:%S GMT %Y");
-    cmd = %(GIT_COMMITTER_DATE="#{formatted_date}" git commit --amend --date "#{formatted_date}" -m"Slight alteration.")
+    cmd = %(GIT_COMMITTER_DATE="#{formatted_date}" git commit --amend --date "#{formatted_date}" -m"Minor changes.")
     print '.' # progress bar
     `#{cmd}`
   end
